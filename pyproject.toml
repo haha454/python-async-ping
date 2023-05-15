@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-async-ping"
+version = "0.2.0"
+description = "Ping with coroutines"
+readme = "README.md"
+authors = [{ name = "haha454", email = "zunhao.wei@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["ping", "icmp", "async"]
+dependencies = [
+    'importlib-metadata; python_version<"3.8"',
+]
+requires-python = ">=3"
+
+[project.optional-dependencies]
+dev = ["bumpver", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/haha454/python-async-ping"
